@@ -15,6 +15,11 @@ public class Player {
 		this.name = name;
 		this.color = color;
 	}
+	
+	public void postMessage(Lobby lobby, String text) {
+		ChatMessage message = new ChatMessage(this, text);
+		lobby.addMessageToChat(message);
+	}
 
 	public String getName() {
 		return name;
