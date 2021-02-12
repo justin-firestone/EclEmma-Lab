@@ -3,15 +3,31 @@ package edu.unl.raikes.amongus;
 public class MainApplication {
 
 	public static void main(String[] args) {
-		Lobby lobby = new Lobby();
+		Player[] players = { new Player("Player Red", PlayerColor.RED), new Player("Player Blue", PlayerColor.BLUE) };
+		Lobby lobby = new Lobby(players);
 		
-		Player player = new Player("Suspicious", PlayerColor.RED);
-		lobby.addPlayerToLobby(player);
+		System.out.printf("The lobby code is: %s\n", lobby.getLobbyCode());
+		System.out.printf("All players allowed: %s\n\n", lobby.getAllPlayersAllowed());
 		
-		int susScore = SuspiciousCalculator.getSuspiciousMetric(player);
-		String chatMessage = String.format("My sus score is %d!", susScore);
-		player.postMessage(lobby, chatMessage);
-
-		System.out.println(lobby.getChat().get(0));
+		players[0].reportDeath();
+		players[0].completedTask();
+		players[1].reportDeath();
+		players[1].reportDeath();
+		players[1].fixedEmergency();
+		players[1].completedTask();
+		players[1].completedTask();
+				
+		System.out.println("Chat Messages:");
+		for (Player player: players) {
+			int susScore = SuspiciousCalculator.getSuspiciousMetric(player, lobby);
+			String chatMessage = String.format("My sus score is %d!", susScore);
+			player.postMessage(lobby, chatMessage);
+		}
+		
+		for (ChatMessage message: lobby.getChat()) {
+			System.out.println(message);
+		}
+		
+		
 	}
 }

@@ -10,7 +10,7 @@ public enum PlayerColor {
 	
 	private String color;
 	
-	PlayerColor(String color){
+	PlayerColor(String color) {
 		this.color = color;
 	}
 	

@@ -4,6 +4,9 @@ public class Player {
 
 	private String name;
 	private PlayerColor color;
+	private int numberOfDeathsReported;
+	private int numberOfTasksSeenCompleting;
+	private int numberOfEmergenciesFixed;
 
 	/**
 	 * Represents a player in the game of Among Us.
@@ -14,6 +17,9 @@ public class Player {
 	public Player(String name, PlayerColor color) {
 		this.name = name;
 		this.color = color;
+		this.numberOfDeathsReported = 0;
+		this.numberOfTasksSeenCompleting = 0;
+		this.numberOfEmergenciesFixed = 0;
 	}
 	
 	public void postMessage(Lobby lobby, String text) {
@@ -35,5 +41,29 @@ public class Player {
 
 	public void setColor(PlayerColor color) {
 		this.color = color;
+	}
+	
+	public void reportDeath() {
+		this.numberOfDeathsReported++;
+	}
+	
+	public int getNumberOfDeathsReported() {
+		return numberOfDeathsReported;
+	}
+	
+	public void completedTask() {
+		this.numberOfTasksSeenCompleting++;
+	}
+	
+	public int getNumberOfTasksSeenCompleting() {
+		return numberOfTasksSeenCompleting;
+	}
+	
+	public void fixedEmergency() {
+		this.numberOfEmergenciesFixed++;
+	}
+	
+	public int getNumberOfEmergenciesFixed() {
+		return numberOfEmergenciesFixed;
 	}
 }
