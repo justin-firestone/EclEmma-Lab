@@ -11,12 +11,14 @@ public class MainApplication {
 		
 		players[0].reportDeath();
 		players[0].completedTask();
+		players[0].seenVenting();
 		players[1].reportDeath();
 		players[1].reportDeath();
 		players[1].fixedEmergency();
 		players[1].completedTask();
 		players[1].completedTask();
 				
+		
 		System.out.println("Chat Messages:");
 		for (Player player: players) {
 			int susScore = SuspiciousCalculator.getSuspiciousMetric(player, lobby);
