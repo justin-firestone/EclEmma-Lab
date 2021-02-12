@@ -12,6 +12,7 @@ public class MainApplication {
 		players[0].reportDeath();
 		players[0].completedTask();
 		players[0].seenVenting();
+		players[0].seenVenting();
 		players[1].reportDeath();
 		players[1].reportDeath();
 		players[1].fixedEmergency();
@@ -22,8 +23,11 @@ public class MainApplication {
 		System.out.println("Chat Messages:");
 		for (Player player: players) {
 			int susScore = SuspiciousCalculator.getSuspiciousMetric(player, lobby);
-			String chatMessage = String.format("My sus score is %d!", susScore);
-			player.postMessage(lobby, chatMessage);
+			String chatMessage1 = String.format("My sus score is %d!", susScore);
+			player.postMessage(lobby, chatMessage1);
+			ImposterClassification classification = SuspiciousCalculator.getNaiveImposterClassificationPrediction(player);
+			String chatMessage2 = String.format("%s?", classification.getClassification());
+			player.postMessage(lobby, chatMessage2);
 		}
 		
 		for (ChatMessage message: lobby.getChat()) {

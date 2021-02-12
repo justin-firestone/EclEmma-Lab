@@ -38,8 +38,8 @@ public class SuspiciousCalculator {
 
 		double playerNameRatio = (double) player.getColor().getColorString().length() / player.getName().length();
 
-		int suspiciousScore = (int) (100 * (0.3 * numberOfDeathsReportedRatio + 0.15 * tasksSeenCompletingRatio
-				+ 0.2 * emergenciesFixedRatio + 0.20 * timesSeenVentingRatio + 0.15 * playerNameRatio));
+		int suspiciousScore = (int) (100 * (0.30 * numberOfDeathsReportedRatio + 0.15 * tasksSeenCompletingRatio
+				+ 0.20 * emergenciesFixedRatio + 0.20 * timesSeenVentingRatio + 0.15 * playerNameRatio));
 		return suspiciousScore;
 	}
 
@@ -81,6 +81,38 @@ public class SuspiciousCalculator {
 		}
 
 		return total;
+	}
+	
+	public static ImposterClassification getNaiveImposterClassificationPrediction(Player player) {
+		if (player.getNumberOfTimesSeenVenting() > 0) {
+			if (player.getNumberOfTimesSeenVenting() > 1) {
+				return ImposterClassification.Imposter; 
+			} else {
+				return ImposterClassification.NotImposter;
+			}
+		} else if (player.getNumberOfDeathsReported() > 0) {
+			if (player.getNumberOfDeathsReported() > 1) {
+				return ImposterClassification.NotImposter;
+			} else {
+				return ImposterClassification.Imposter;
+			}
+		} else if (player.getNumberOfTasksSeenCompleting() > 0) {
+			if (player.getNumberOfTasksSeenCompleting() > 2) {
+				return ImposterClassification.NotImposter;
+			} else {
+				return ImposterClassification.Imposter;
+			}
+		} else if (player.getNumberOfEmergenciesFixed() > 0) {
+			if (player.getNumberOfEmergenciesFixed() > 3) {
+				return ImposterClassification.Imposter;
+			} else if (player.getNumberOfEmergenciesFixed() > 1) {
+				return ImposterClassification.NotImposter;
+			} else {
+				return ImposterClassification.Imposter;
+			}
+		} else {
+			return ImposterClassification.NotImposter;
+		}
 	}
 
 }
