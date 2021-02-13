@@ -31,7 +31,7 @@ You will compete against other teams to obtain the best code coverage!
 
 ### Unit Tests
 
-We would like you to write unit tests that test very specific pieces of functionality and are concise. Every line of code in the test should do something important and contribute to the functionality being tested. This means that there should only be one assert statement per unit test. This is to ensure the uniformity of tests between teams. (Please do not consolidate multiple mini-tests into a boolean and test the value of that).All tests require an error message, making it clear what went wrong. “Was True, should have been False” is not valid.
+We would like you to write unit tests that test very specific pieces of functionality and are concise. Every line of code in the test should do something important and contribute to the functionality being tested. This means that there should only be one assert statement per unit test. This is to ensure the uniformity of tests between teams. (Please do not consolidate multiple mini-tests into a boolean and test the value of that). All tests require an error message, making it clear what went wrong. “Was True, should have been False” is not valid.
 
 ### Deliverables
 
