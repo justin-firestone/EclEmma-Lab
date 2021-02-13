@@ -1,5 +1,7 @@
 package edu.unl.raikes.amongus;
 
+import java.util.ArrayList;
+
 public class MainApplication {
 
 	public static void main(String[] args) {
@@ -34,6 +36,13 @@ public class MainApplication {
 			System.out.println(message);
 		}
 		
+
+		ArrayList<Player> topKSuspicious = SuspiciousCalculator.getTopKSuspicious(lobby, 1);
+		System.out.println("\nMost Suspicious Characters:");
+		int i = 1;
+		for (Player p: topKSuspicious) {
+			System.out.printf("%d: %s", i, p);
+		}
 		
 	}
 }

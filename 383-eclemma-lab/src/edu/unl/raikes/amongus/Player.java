@@ -1,9 +1,10 @@
 package edu.unl.raikes.amongus;
 
-public class Player {
+public class Player implements Comparable<Player> {
 
 	private String name;
 	private PlayerColor color;
+	private int suspiciousScore;
 	private int numberOfDeathsReported;
 	private int numberOfTasksSeenCompleting;
 	private int numberOfEmergenciesFixed;
@@ -18,6 +19,7 @@ public class Player {
 	public Player(String name, PlayerColor color) {
 		this.name = name;
 		this.color = color;
+		this.suspiciousScore = 0;
 		this.numberOfDeathsReported = 0;
 		this.numberOfTasksSeenCompleting = 0;
 		this.numberOfEmergenciesFixed = 0;
@@ -43,6 +45,14 @@ public class Player {
 
 	public void setColor(PlayerColor color) {
 		this.color = color;
+	}
+	
+	public int getSuspiciousScore() {
+		return suspiciousScore;
+	}
+	
+	public void calculateSuspiciousScore(Lobby lobby) {
+		this.suspiciousScore = SuspiciousCalculator.getSuspiciousMetric(this, lobby);
 	}
 	
 	public void reportDeath() {
@@ -75,5 +85,20 @@ public class Player {
 	
 	public int getNumberOfTimesSeenVenting() {
 		return numberOfTimesSeenVenting;
+	}
+	
+	public String toString() {
+		return name.toUpperCase();
+	}
+	
+	@Override
+	public int compareTo(Player pl) {
+		if (pl.getSuspiciousScore() > suspiciousScore) {
+			return 1;
+		} else if (pl.getSuspiciousScore() < suspiciousScore) {
+			return -1;
+		} else {
+			return 0;
+		}
 	}
 }

@@ -1,5 +1,8 @@
 package edu.unl.raikes.amongus;
 
+import java.util.ArrayList;
+import java.util.Collections;
+
 public class SuspiciousCalculator {
 
 	/*
@@ -113,6 +116,28 @@ public class SuspiciousCalculator {
 		} else {
 			return ImposterClassification.NotImposter;
 		}
+	}
+	
+	public static ArrayList<Player> getTopKSuspicious(Lobby lobby, int k) {
+		ArrayList<Player> sortedPlayers = sortPlayers(lobby);
+		if (sortedPlayers.size() <= k) {
+			return sortedPlayers;
+		} else {
+			while (sortedPlayers.size() > k) {
+				sortedPlayers.remove(sortedPlayers.size() - 1);
+			}
+			return sortedPlayers;
+		}
+	}
+	
+	private static ArrayList<Player> sortPlayers(Lobby lobby) {
+		ArrayList<Player> playersCopy = new ArrayList<Player>();
+		for (Player p: lobby.getPlayers()) {
+			p.calculateSuspiciousScore(lobby);
+			playersCopy.add(p);
+		}
+		Collections.sort(playersCopy);
+		return playersCopy;
 	}
 
 }
