@@ -39,7 +39,7 @@ We would like you to write unit tests that test very specific pieces of function
 
 
 
-**Reflection paper:** The second deliverable will be an individual assignment. This assignment is a 1-2 page double spaced reflection paper outlining your experience creating the unit tests. In the paper, please reflect on:
+**Reflection paper:** As a group, write a 2-3 page double spaced reflection paper outlining your experience creating the unit tests. In the paper, please reflect on:
 
 1. Why code coverage is a useful metric
 2. What code coverage does not tell you about your unit tests
@@ -49,4 +49,8 @@ We would like you to write unit tests that test very specific pieces of function
 
 
 
-The reflection paper can be turned in for the assignment on Canvas.
+**Code:** Lastly, please submit your team's `AmongUsTests.java` file with your 20 completed unit tests
+
+
+
+The reflection paper and code file can both be turned in on Canvas for this assignment.
