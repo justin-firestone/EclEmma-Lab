@@ -47,6 +47,6 @@ We would like you to write unit tests that test very specific pieces of function
 4. What your takeaways from this lab are
 5. How you could apply what you learned from this lab to your project
 
-**Code:** Lastly please submit your team’s `AmongUsTests.java` file with your additional 20 unit tests.
+**Code:** Lastly please submit your team’s `AmongUsMutationTests.java` file with your additional 20 unit tests.
 
 The reflection paper and code file can both be turned in on Canvas for this assignment.
