@@ -12,9 +12,17 @@ Pitclipse is a library allowing you to test the quality of your tests through mu
 To run Pitclipse, use the following steps:
 
 1. Right click on your project
-2. Click on `Run As -> PIT Mutation Test`![img](https://lh6.googleusercontent.com/wF_-dQu7oIQZoNSl_mH92OUMORPU9vAuOGe7W30nkt1EjzVjujiXZ32UQCJH1_avsS0SisMNYzRPyolsIJd4JbMoMm0HNOY6iSwLz7rwURWylqGv_RIVEuCiq3kx0zuR1-uwzAr9)
+
+2. Click on `Run As -> PIT Mutation Test`
+
+   ![img](https://lh6.googleusercontent.com/wF_-dQu7oIQZoNSl_mH92OUMORPU9vAuOGe7W30nkt1EjzVjujiXZ32UQCJH1_avsS0SisMNYzRPyolsIJd4JbMoMm0HNOY6iSwLz7rwURWylqGv_RIVEuCiq3kx0zuR1-uwzAr9)
+
 3. After a lot of red text, you should have the PIT Mutations and PIT Summary pages within your navigation bar. If a window doesn't show up go to `Window` > `Navigation` > `Find Actions` and search `PIT Summary` or `PIT Mutations`
-4. On the PIT Summary page, you will see how well your tests did at crushing mutations and a breakdown by class. If you navigate to a class of code from within this interface, you can always navigate back by right clicking the page then clicking the back button.![img](https://lh4.googleusercontent.com/26uT8sHrzvPVWnNvbWAfaaOmT2DcXACG2H50mmYFsmaoyBl-4k_iYxlvcrr3Y3c7-0Vaj_bxAk3vsNI8X1-artAVCvzGnbqTL19noVYC85o2yKR6vu48rUTHesbaU9tyttN_U0e-)
+
+4. On the PIT Summary page, you will see how well your tests did at crushing mutations and a breakdown by class. If you navigate to a class of code from within this interface, you can always navigate back by right clicking the page then clicking the back button.
+
+   ![img](https://lh4.googleusercontent.com/26uT8sHrzvPVWnNvbWAfaaOmT2DcXACG2H50mmYFsmaoyBl-4k_iYxlvcrr3Y3c7-0Vaj_bxAk3vsNI8X1-artAVCvzGnbqTL19noVYC85o2yKR6vu48rUTHesbaU9tyttN_U0e-)
+
 5. On the PIT Mutations page, you can see each survived or killed mutation in-depth, and it will tell you the objective of the mutation and what line(s) it can be found on.![img](https://lh4.googleusercontent.com/IAurC9wjryJJAk4Fztt8Q-BQc6q23Bs6dfQ4V-tY5t5sALmxWptpdervB04DoNPFAVPpVvns8jHHC3YjhB4QIQY9moPEsZm6e8WnXNPn-I8fTXi7TQaxjVgfl3jNwk9UCd4xpVb0)
 
 ### Challenge 
