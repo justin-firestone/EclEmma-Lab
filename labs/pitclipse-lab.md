@@ -23,7 +23,9 @@ To run Pitclipse, use the following steps:
 
    ![img](https://lh4.googleusercontent.com/26uT8sHrzvPVWnNvbWAfaaOmT2DcXACG2H50mmYFsmaoyBl-4k_iYxlvcrr3Y3c7-0Vaj_bxAk3vsNI8X1-artAVCvzGnbqTL19noVYC85o2yKR6vu48rUTHesbaU9tyttN_U0e-)
 
-5. On the PIT Mutations page, you can see each survived or killed mutation in-depth, and it will tell you the objective of the mutation and what line(s) it can be found on.![img](https://lh4.googleusercontent.com/IAurC9wjryJJAk4Fztt8Q-BQc6q23Bs6dfQ4V-tY5t5sALmxWptpdervB04DoNPFAVPpVvns8jHHC3YjhB4QIQY9moPEsZm6e8WnXNPn-I8fTXi7TQaxjVgfl3jNwk9UCd4xpVb0)
+5. On the PIT Mutations page, you can see each survived or killed mutation in-depth, and it will tell you the objective of the mutation and what line(s) it can be found on.
+
+   ![img](https://lh4.googleusercontent.com/IAurC9wjryJJAk4Fztt8Q-BQc6q23Bs6dfQ4V-tY5t5sALmxWptpdervB04DoNPFAVPpVvns8jHHC3YjhB4QIQY9moPEsZm6e8WnXNPn-I8fTXi7TQaxjVgfl3jNwk9UCd4xpVb0)
 
 ### Challenge 
 
