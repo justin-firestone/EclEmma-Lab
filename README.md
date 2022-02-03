@@ -1,7 +1,7 @@
-# raik-383-testing-lab
+# RAIK284H Testing Labs
 ### Introduction
 
-This README documents the current labs that we have as part of this repository.
+There are two labs associated with this code:
 
 1. [Eclemma Lab](./labs/eclemma-lab.md)
 
