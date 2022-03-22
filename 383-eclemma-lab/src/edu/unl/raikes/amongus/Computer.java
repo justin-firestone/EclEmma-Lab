@@ -2,7 +2,7 @@ package edu.unl.raikes.amongus;
 
 import java.util.Random;
 
-public class Computer{
+public class Computer {
     private boolean wiresAreWorking;
     private Random rnd = new Random();
 
