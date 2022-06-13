@@ -1,8 +1,10 @@
 package edu.unl.raikes.amongus;
 
 public class Beverage {
-    private int cost;
-    public Beverage(int cost){
+
+	private int cost;
+    
+	public Beverage(int cost){
         this.cost = cost;
     }
     
@@ -12,4 +14,12 @@ public class Beverage {
         }
         return false;
     }
+
+	public int getCost() {
+		return cost;
+	}
+
+	public void setCost(int cost) {
+		this.cost = cost;
+	}
 }
