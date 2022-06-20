@@ -4,7 +4,7 @@ Students at the Raikes School have recently started work on prediction algorithm
 
 ### EclEmma
 
-Code coverage is a metric that can help determine how much of your code is executed by unit tests. You will be using a built-in extension of Eclipse called EclEmma. After cloning and opening this project in Eclipse, you can run EclEmma:
+Code coverage is a metric that can help determine how much of your code is executed by unit tests. [JUnit Assert class link](http://junit.sourceforge.net/javadoc/org/junit/Assert.html) You will be using a built-in extension of Eclipse called EclEmma. After cloning and opening this project in Eclipse, you can run EclEmma:
 
 1. Right click on the project
 
