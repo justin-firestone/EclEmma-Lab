@@ -25,7 +25,47 @@ public class TaskList {
         tasks.add(number4);
     }
 
-    public void completeTask(int i){
+    public Beverage getBeverage() {
+		return beverage;
+	}
+
+	public void setBeverage(Beverage beverage) {
+		this.beverage = beverage;
+	}
+
+	public Computer getComputer() {
+		return computer;
+	}
+
+	public void setComputer(Computer computer) {
+		this.computer = computer;
+	}
+
+	public AirFilter getFilter() {
+		return filter;
+	}
+
+	public void setFilter(AirFilter filter) {
+		this.filter = filter;
+	}
+
+	public Vent getVent() {
+		return vent;
+	}
+
+	public void setVent(Vent vent) {
+		this.vent = vent;
+	}
+
+	public ArrayList<Integer> getTasks() {
+		return tasks;
+	}
+
+	public void setTasks(ArrayList<Integer> tasks) {
+		this.tasks = tasks;
+	}
+
+	public void completeTask(int i){
         switch(i){
             case 1:
                 int coin = 0; 
