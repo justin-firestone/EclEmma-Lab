@@ -6,7 +6,7 @@ Time to kill some mutants!
 
 Mutation testing involves automatically inserting faults into your code (mutations) and then checking to see whether your tests detect these faults (kill mutants). If tests still pass when running on the mutated code, it could mean your test suite is inadequate!
 
-Pitclipse is a tool which performs mutation testing in Eclipse. You will try to kill as many mutants as possible by writing 20 more unit tests. To add Pitclipse to your Eclipse, follow [Pitclipse's GitHub](https://github.com/pitest/pitclipse) read me.
+Pitclipse is a tool which performs mutation testing in Eclipse. You will try to kill as many mutants as possible by writing 20 more unit tests. To add Pitclipse to your Eclipse, you should be able to find it in the Eclipse Marketplace by searching for "pitclipse" or find support here: [Pitclipse's GitHub](https://github.com/pitest/pitclipse). If you see an installation error regarding a Google guava dependency, see this link: [guava issue](https://github.com/pitest/pitclipse/issues/189).
 
 To run Pitclipse:
 
