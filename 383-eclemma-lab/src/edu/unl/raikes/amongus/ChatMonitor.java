@@ -13,7 +13,7 @@ public class ChatMonitor {
 	}
 	
 	public static void removeSpecialCharacters(ChatMessage message) {
-		String pattern = "[^ a-zA-Z0-9!?$]";
+		String pattern = "[!?$]";
 		String modifiedMessage = message.getMessage().replaceAll(pattern, "");
 		
 		message.setMessage(modifiedMessage);
