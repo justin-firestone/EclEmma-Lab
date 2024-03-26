@@ -97,29 +97,4 @@ public class AmongUsTests {
 	public void test15() {
 		
 	}
-	
-	@Test
-	public void test16() {
-		
-	}
-	
-	@Test
-	public void test17() {
-		
-	}
-	
-	@Test
-	public void test18() {
-		
-	}
-	
-	@Test
-	public void test19() {
-		
-	}
-	
-	@Test
-	public void test20() {
-		
-	}
 }
