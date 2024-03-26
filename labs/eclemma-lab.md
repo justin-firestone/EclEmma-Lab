@@ -24,7 +24,7 @@ Some Raikes School students are working on prediction algorithms for Among Us. T
 
 ### Challenge
 
-Work with your team to obtain as much code coverage as possible in `src.edu.unl.raikes.amongus`. However, you are allowed only 20 unit tests! Each unit test must follow traditional best practices for unit tests, meaning you cannot use loops or other strategies to effectively violate the "one assert per unit test" rule. Write concise unit tests that test specific pieces of functionality. All tests must include a meaningful error message! “Was True, should have been False” is not meaningful.
+Work with your team to obtain as much code coverage as possible in `src.edu.unl.raikes.amongus`. However, you are allowed only 15 unit tests! Each unit test must follow traditional best practices for unit tests, meaning you cannot use loops or other strategies to effectively violate the "one assert per unit test" rule. Write concise unit tests that test specific pieces of functionality. All tests must include a meaningful error message! “Was True, should have been False” is not meaningful.
 
 ### Deliverables
 
@@ -38,4 +38,4 @@ Take a screenshot of your code coverage and add it to your reflection paper.
 4. General takeaways from using this tool and its output
 5. How you could apply what you learned to the class project
 
-**Code:** Submit your team's `AmongUsTests.java` file with your 20 completed unit tests to Canvas as a separate file.
+**Code:** Submit your team's `AmongUsTests.java` file with your 15 completed unit tests to Canvas as a separate file.
