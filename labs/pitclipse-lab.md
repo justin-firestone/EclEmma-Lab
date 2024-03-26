@@ -32,12 +32,12 @@ Work with your team to add an additional 20 unit tests focused around maximizing
 
 ### Unit Tests
 
-Again, you are allowed only 20 unit tests! Each unit test must abide by the traditional best practices for unit tests, meaning you cannot use loops or other strategies to effectively violate the "one assert per unit test" rule. Write unit tests that test very specific pieces of functionality and are concise. All tests require an error message, making it clear what went wrong. “Was True, should have been False” is not a sufficient message.
+Again, you are allowed only 15 unit tests! Each unit test must abide by the traditional best practices for unit tests, meaning you cannot use loops or other strategies to effectively violate the "one assert per unit test" rule. Write unit tests that test very specific pieces of functionality and are concise. All tests require an error message, making it clear what went wrong. “Was True, should have been False” is not a sufficient message.
 
 ### Deliverables
 Take screenshots that show the metrics of your test suite and add to your reflection paper.
 
-**Reflection Paper:** As a group, write a 2-3 page double spaced reflection paper about your experience creating your new unit tests. Reflect on:
+**Reflection Paper:** As a group, write a short paper about your experience creating your new unit tests covering the following topics:
 
 1. How mutation coverage differs from the code coverage that measured in the EclEmma lab
 2. What additional insights mutation coverage can offer about your unit tests
@@ -45,4 +45,4 @@ Take screenshots that show the metrics of your test suite and add to your reflec
 4. What your general takeaways from this lab are
 5. How you could apply what you learned from about mutation testing to your project
 
-**Code:** Submit your team’s `AmongUsMutationTests.java` file with your additional 20 unit tests (both the paper and file should be uploaded to Canvas.
+**Code:** Submit your team’s `AmongUsMutationTests.java` file with your additional 15 unit tests (both the paper and file should be uploaded to Canvas.
