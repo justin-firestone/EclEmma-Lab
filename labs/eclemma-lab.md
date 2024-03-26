@@ -30,7 +30,7 @@ Work with your team to obtain as much code coverage as possible in `src.edu.unl.
 
 Take a screenshot of your code coverage and add it to your reflection paper.
 
-**Reflection paper:** As a group, write a roughly 2-page reflection paper outlining your experience creating your unit tests. Discuss, at minimum, the following:
+**Reflection paper:** As a group, write a few paragraphs outlining your experience creating your unit tests covering the following topics:
 
 1. How code coverage is useful
 2. What code coverage does or does not tell you about your unit tests
